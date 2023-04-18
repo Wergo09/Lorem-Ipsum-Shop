@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { DatabaseService } from './../services/database.service';
 
 @Component({
   selector: 'app-product',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class ProductComponent {
 
+  constructor(
+    private route: ActivatedRoute,
+    private databaseService: DatabaseService
+  ) {}
+
+  
 }

@@ -40,9 +40,9 @@ img {
 }
 
 .carousel-wrapper {
-    height:500px;
+    height:600px;
     position:relative;
-    width: 80%;
+    width: 100%;
     margin:0 auto;
 }
 
@@ -65,6 +65,11 @@ img {
     line-height: 95%;
     text-transform: uppercase;
     color: black;
+    transition: .6s;
+}
+
+.carousel-item p:hover {
+    color:rgb(18, 37, 146);
 }
 
 .arrow {
@@ -75,14 +80,14 @@ img {
 }
 
 .arrow-prev {
-  left:-30px;
+  left:30px;
   position:absolute;
   top:50%;
   transform:translateY(-50%) rotate(135deg);
 }
  
 .arrow-next {
-    right:-30px;
+  right:30px;
   position:absolute;
   top:50%;
   transform:translateY(-50%) rotate(-45deg);
