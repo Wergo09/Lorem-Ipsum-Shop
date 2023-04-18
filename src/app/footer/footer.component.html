@@ -1,0 +1,43 @@
+<footer>
+    <div class="wrapper">
+        <div class="block_footer">
+            <div class="block_social">
+                <img class="logo" src="assets/img/logo_new.jpg" alt="logo">
+                <div class="social_network">
+                    <a href="https://www.instagram.com/artukhovskiy/"><img  src="assets/img/instagram_new.png" alt="social"></a>
+                    <a href="https://vk.com/id84353596"><img  src="assets/img/vk.png" alt="social"></a>
+                </div>
+            </div>
+            <div class="block_info">
+                <p>Каталог</p>
+                <ul>
+                    <li *ngFor="let category of categories">
+                        <span
+                        [routerLink]='["/products"]'
+                        [queryParams]="{ category: category.id }"
+                        >{{category.name}}</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="block_info">
+                <p>Что есть на сайте?</p>
+                <ul>
+                    <li routerLink='/'>Домашнаяя страница</li>
+                    <li routerLink='/products'>Каталог</li>
+                    <li routerLink='/about'>О нас</li>
+                    <li routerLink='/enter'>Регистрация</li>
+                    <li routerLink='/contacts'>Контакты</li>
+                </ul>
+            </div>
+            <div class="block_email">
+                <p>Узнавай о новинках первым</p>
+                <p>Получай от нас смс с сюрпризами</p>
+                <form action="#">
+                    <input type="email" placeholder="Email" name="" id="">
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+        <p class="rights_reserved_sign">Copyright ©2023 All rights reserved</p>
+    </div>
+</footer>

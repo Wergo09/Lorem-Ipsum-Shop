@@ -1,0 +1,52 @@
+<div class="products">
+    <div class="sign_logo">
+        <h1>Наш <span class="blue_text">магазин</span> постоянно пополняется!</h1>
+    </div>
+    <div class="header_line">
+        <ul>
+            <li *ngFor="let category of categories">
+                <span
+                [routerLink]='["/products"]'
+                [queryParams]="{ category: category.id }"
+                >{{category.name}}</span>
+            </li>
+        </ul>
+    </div>
+    <div class="products_catalog">
+        <div class="products_menu">
+        <div class="catalog_menu_text">
+            <p class="catalog_menu_upper_text"><span class="blue_text" *ngIf='category?.name'>{{category?.name | slice:0:2}}</span>{{category?.name | slice:2}}</p>
+            <p class="catalog_menu_upper_text" *ngIf='!category?.name'><span class="blue_text" >Все</span> товары</p>
+            <p class="catalog_menu_lower_text">Любые размеры и формы</p>
+        </div>
+        <div class="catalog_sorted">
+            <div class="catalog_sorted_first">
+            
+            </div>
+            <div class="block_search">
+                <a href="#" class="search_btn">
+                    <img src="assets/img/search_grey.png" alt="search">
+                </a>
+                <input class="search_txt" placeholder="Поиск" type="text" name="" id="">
+            </div>  
+        </div>
+        </div>
+        <div class="products_goods">
+            <div class="products_goods_example" *ngFor='let product of products'>
+                <div class="products_img">
+                    <span class="filter"></span>
+                    <a href="#"><img class="t_shirt t_shirt_position" src={{product.image}}></a>
+                    <span class="get_more_sign" routerLink='/product'>Подробнее про продукт</span>
+                </div>
+                <p class="products_goods_upper_text">{{product.name}}</p>
+                <p class="products_goods_lower_text">{{product.price}} руб.</p>
+            </div>
+        </div>
+    <!-- <div class="products_list">
+        <a href="#" class="arrow_list_left"></a>
+        <p class="page"></p>
+        <p class="current_page"></p>
+        <p class="page"></p>
+        <a href="#" class="arrow_list_right"></a>
+    </div>     -->
+</div>

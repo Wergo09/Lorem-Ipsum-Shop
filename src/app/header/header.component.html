@@ -1,0 +1,40 @@
+<header>
+    <div class="wrapper">
+        <div class="header_logo">
+            <div class="header_leftside">
+               <div class="logo_img">
+                   <img src="assets/img/logo_new.jpg" [routerLink]='["/"]' alt="logo">
+               </div>  
+            </div>
+            <div class="header_line">
+                <ul>
+                    <li routerLink='/'>Домашнаяя страница</li>
+                    <li routerLink='/products'>Каталог</li>
+                    <li routerLink='/about'>О нас</li>
+                    <li routerLink='/enter'>Регистрация</li>
+                    <li routerLink='/contacts'>Контакты</li>     
+                </ul>
+            </div>
+            <div class="header_rightside">
+            <div class="block_search">
+                <a href="#" class="search_btn">
+                    <img src="assets/img/search_grey.png" alt="search">
+                </a>
+                <input class="search_txt" placeholder="Поиск" type="text" name="" id="">
+            </div>
+            <div class="block_main">
+                <div class="block_basket">
+                    <a routerLink='/basket' href="#">
+                        <img src="assets/img/shopping_cart.png" alt="">
+                    </a>
+                </div>
+                <div class="block_basket position_lower">
+                    <a routerLink='/profile' href="#">
+                        <img src="assets/img/profile.png" alt="">
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>   
+    </div>
+</header>
