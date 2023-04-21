@@ -339,3 +339,21 @@ input[type="text"]::-webkit-input-placeholder {
     color: rgb(63, 103, 204);
     font-weight: bold;
 }
+
+@media screen and (max-width:960px) {
+    .sign_logo h1 {
+        font-size: 60px;
+    }
+    .sign_logo {
+        height: auto;
+        padding-top: 15%;
+    }
+    .products_goods_example {
+        flex: 50%;
+        max-width: 50%;
+        align-items: center;
+    }
+    .products_goods_upper_text {
+        text-align: center;
+    }
+}
