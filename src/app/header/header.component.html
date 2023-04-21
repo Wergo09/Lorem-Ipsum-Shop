@@ -4,9 +4,8 @@
             <div class="header_leftside">
                <div class="logo_img">
                    <img src="assets/img/logo_new.jpg" [routerLink]='["/"]' alt="logo">
-               </div>  
-            </div>
-            <div class="header_line">
+               </div>
+               <div class="header_line full_size">
                 <ul>
                     <li routerLink='/'>Домашнаяя страница</li>
                     <li routerLink='/products'>Каталог</li>
@@ -14,6 +13,7 @@
                     <li routerLink='/enter'>Регистрация</li>
                     <li routerLink='/contacts'>Контакты</li>     
                 </ul>
+               </div>  
             </div>
             <div class="header_rightside">
             <div class="block_search">
@@ -33,6 +33,29 @@
                         <img src="assets/img/profile.png" alt="">
                     </a>
                 </div>
+                <!-- <div class="header_line mere_size">
+                    <ul>
+                        <li routerLink='/'>Домашнаяя страница</li>
+                        <li routerLink='/products'>Каталог</li>
+                        <li routerLink='/about'>О нас</li>
+                        <li routerLink='/enter'>Регистрация</li>
+                        <li routerLink='/contacts'>Контакты</li>     
+                    </ul>
+                </div> -->
+                <div class="hamburger_menu mere_size">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                      <span></span>
+                    </label>
+                
+                    <ul class="menu__box">
+                        <li routerLink='/'><a class="menu__item">Домашнаяя страница</a></li>
+                        <li routerLink='/products'><a class="menu__item">Каталог</a></li>
+                        <li routerLink='/about'><a class="menu__item">О нас</a></li>
+                        <li routerLink='/enter'><a class="menu__item">Регистрация</a></li>
+                        <li routerLink='/contacts'><a class="menu__item">Контакты</a></li>
+                    </ul>
+                </div> 
             </div>
             </div>
         </div>   

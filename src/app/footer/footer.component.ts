@@ -9,7 +9,7 @@ import { DatabaseService } from './../services/database.service';
 })
 export class FooterComponent {
 
-  public category: any;
+  public category?: any;
   public categories: any[] = []; 
   private categorySubscribe: any;
   private productsSubscribe: any;
@@ -54,7 +54,7 @@ export class FooterComponent {
 
   findCategory(products: any[]) {
     this.products = products.reduce((acc, item) => {
-      if (item.category === this.category.id) {
+      if (item.category === this.category?.id) {
         acc.push(item);
       }
       return acc;

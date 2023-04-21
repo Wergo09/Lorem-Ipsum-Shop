@@ -1,5 +1,5 @@
 .blue_text {
-    color: rgb(18, 37, 146);
+    color: rgb(63, 103, 204);
 }
 
 .contacts {
@@ -88,11 +88,11 @@
 }
 
 .social_network_home a:hover {
-    background: rgb(18, 37, 146);
+    background: rgb(63, 103, 204);
 }
 
 .social_network_home:nth-child(2) a:hover {
-    background: rgb(18, 37, 146);
+    background: rgb(63, 103, 204);
     border-radius: 20px;
 }
 
@@ -153,7 +153,7 @@
     font-size: 16px;
     line-height: 20px;
     padding-left: 15px;
-    color: rgb(18, 37, 146);
+    color: rgb(63, 103, 204);
 }
 
 .map {
@@ -168,7 +168,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-    height: 600px;
+    height: 750px;
     width: 100%;
     margin: 0 auto;
     transition: .6s;
@@ -176,7 +176,8 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    padding-top: 2%;
+    margin-top: 50px;
+    padding-top: 10%;
     margin-bottom: 5%;
 }
 
@@ -221,7 +222,7 @@
 }
 
 .sign_catalog:hover {
-    background-color: rgb(18, 37, 146);
+    background-color: rgb(63, 103, 204);
     color: #fff;
-    border: 2px solid rgb(18, 37, 146);
+    border: 2px solid rgb(63, 103, 204);
 }

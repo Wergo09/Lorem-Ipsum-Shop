@@ -1,5 +1,5 @@
 .blue_text {
-    color: rgb(18, 37, 146);
+    color: rgb(63, 103, 204);
 }
 
 .products {
@@ -66,43 +66,6 @@
     gap: 15px;
 }
 
-.atributes__select__wrap {
-    position: relative;
- }
- 
-.atributes_wrapper_skew {
-    width: 186.5px;
-    height: 30px;
-    transform: skew(-15deg);
-    background: #FFC700;
- }
- 
-.atributes__select__wrap select {
-    border: 0 none;
-    width: 150px;
-    height: 30px;
-    position: absolute;
-    top: 0;
-    left: 10%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: #000000;
-    background-color: #FFC700;
- }
- 
-.atributes__select__wrap select::placeholder {
-     font-family: 'Montserrat';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 16px;
-     line-height: 20px;
-     color: #FFC700;
- }
-
 label {
     font-family: 'Montserrat';
     font-style: normal;
@@ -141,7 +104,6 @@ label {
 .products_goods_example {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex: 25%;
     max-width: 25%;
     padding-bottom: 10%;
@@ -155,7 +117,6 @@ label {
     font-size: 20px;
     line-height: 24px;
     color: #333;
-    white-space: nowrap;
 }
 
 .products_goods_lower_text {
@@ -191,18 +152,6 @@ label {
     width: 13px;
     height: 24px;
     align-self: center;
-}
-
-.page {
-    width: 50px;
-    height: 50px;
-    background: #252525;
-}
-
-.current_page {
-    width: 60px;
-    height: 60px;
-    background: #FFC700;
 }
 
 .header_line {
@@ -252,8 +201,7 @@ li span:after {
 	left: 0; 
 	width: 0;
 	height: 2px; 
-	background-color: rgb(18, 37, 146); 
-	content: "";
+	background-color: rgb(18, 37, 146)rgb(63, 103, 204);
 	transition: width 0.3s ease-out;
 }
 
@@ -263,7 +211,7 @@ li span:focus:after {
 }
 
 li span:hover {
-    color: rgb(18, 37, 146); 
+    color: rgb(63, 103, 204); 
 }
 
 .sign_logo {
@@ -271,7 +219,7 @@ li span:hover {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-    height: 600px;
+    height: 750px;
     width: 100%;
     margin: 0 auto;
     transition: .6s;
@@ -279,7 +227,8 @@ li span:hover {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    padding-top: 2%;
+    margin-top: 50px;
+    padding-top: 10%;
     margin-bottom: 5%;
 }
 
@@ -347,8 +296,8 @@ li span:hover {
 }
 
 .get_more_sign:hover {
-    background-color: rgb(18, 37, 146);
-    border: 1px solid rgb(18, 37, 146);
+    background-color: rgb(63, 103, 204);
+    border: 1px solid rgb(63, 103, 204);
 }
 
 .block_search {
@@ -378,7 +327,7 @@ li span:hover {
     border: none;
     outline: none;
     background: none;
-    color: rgb(18, 37, 146);
+    color: rgb(63, 103, 204);
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -387,6 +336,6 @@ li span:hover {
 }
 
 input[type="text"]::-webkit-input-placeholder {
-    color: rgb(18, 37, 146);
+    color: rgb(63, 103, 204);
     font-weight: bold;
 }

@@ -1,0 +1,13 @@
+app-header {
+    z-index: 9;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+}
+
+@media screen and (max-width:960px) {
+    app-header {
+        height: 130px;
+    }
+}

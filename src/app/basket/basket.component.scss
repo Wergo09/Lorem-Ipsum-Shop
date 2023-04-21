@@ -17,7 +17,7 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    background: rgb(18, 37, 146);
+    background: rgb(63, 103, 204);
     border-radius: 20px;
     right: -50px;
     padding-top: 12.8px;
@@ -27,8 +27,8 @@
 }
 
 .basket_position:hover {
-    background-color: rgb(18, 37, 146);
-    border: 1px solid rgb(18, 37, 146);
+    background-color: rgb(63, 103, 204);
+    border: 1px solid rgb(63, 103, 204);
     .position_cancel {
         visibility: visible;
     }
@@ -47,6 +47,7 @@
     background-color: #fff;
     margin: 0 auto;
     width: 100%;
+    padding-top: 10%;
 }
 
 .basket_main {
@@ -147,17 +148,6 @@
     color: #333;
 }
 
-.atributes__select__wrap {
-    position: relative;
- }
- 
-.atributes_wrapper_skew {
-    width: 186.5px;
-    height: 30px;
-    transform: skew(-15deg);
-    background: #FFC700;
-}
-
 label {
     font-family: 'Montserrat';
     font-style: normal;
@@ -191,7 +181,7 @@ label {
     font-size: 22px;
     line-height: 39px;
     text-align: center;
-    color: rgb(18, 37, 146);
+    color: rgb(63, 103, 204);
     padding-right: 5%;
     white-space: nowrap;
 }
@@ -215,38 +205,6 @@ label {
     padding-bottom: 5%;
 }
 
-// .order_lower {
-//     display: flex;
-//     // justify-content: space-between;
-//     gap: 10%;
-//     width: 75%;
-//     margin: 0 auto;
-// }
-
-// .order_inputs {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 20px;
-//     padding-bottom: 15%;
-// }
-
-// .order_input {
-//     width: 441px;
-//     height: 50px;
-//     border: none;
-//     background: #111111;
-// }
-
-// .order_input::placeholder {
-//     font-family: 'Inter';
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 12px;
-//     line-height: 15px;
-//     color: #FFC700;
-//     padding-left: 8%;
-// }
-
 .order_ordering {
     display: flex;
     flex-direction: column;
@@ -260,8 +218,8 @@ label {
 }
 
 .order_ordering:hover {
-    border-color: rgb(18, 37, 146);
-    background-color: rgb(18, 37, 146);
+    border-color: rgb(63, 103, 204);
+    background-color: rgb(63, 103, 204);
     .order_price {
         color:#fff;
     }
@@ -298,121 +256,6 @@ label {
         color: #000; 
     }
 }
-
-// .order_checkboxes {
-//     display: flex;
-//     gap: 25%;
-// }
-
-// .order_options {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 7px;
-// }
-
-// .order_checkboxes_title {
-//     font-family: 'Montserrat';
-//     font-style: normal;
-//     font-weight: 600;
-//     font-size: 18px;
-//     line-height: 22px;
-//     color: #FFFFFF;
-// }
-
-// label {
-//     font-family: 'Montserrat';
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 16px;
-//     line-height: 20px;
-//     color: #FFC700;
-//     white-space: nowrap;
-// }
-
-// input[type='checkbox']{ height: 0; width: 0; }
-
-// input[type='checkbox'] + label{
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-//   font-family: 'Montserrat';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 16px;
-//   line-height: 20px;
-//   color: #FFC700;
-//   transition: color 250ms cubic-bezier(.4,.0,.23,1);
-// }
-
-// input[type='checkbox'] + label > span{
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin-right: 1em;
-//   width: 20px;
-//   height: 20px;
-//   background: #111111;
-//   border: transparent;
-//   cursor: pointer;  
-//   transition: all 250ms cubic-bezier(.4,.0,.23,1);
-// }
-
-// input[type='checkbox'] + label:hover, input[type='checkbox']:focus + label{
-//   font-weight: 600; 
-//   color: #FFC700;
-// }
-
-// input[type='checkbox'] + label:hover > span, input[type='checkbox']:focus + label > span{
-//   background: #111111;
-// }
-
-// input[type='checkbox']:checked + label > span{
-//   border: .5em solid #111111;
-//   animation: shrink-bounce 200ms cubic-bezier(.4,.0,.23,1);
-// }
-
-// input[type='checkbox']:checked + label > span:before{
-//   content: "";
-//   position: absolute;
-//   top: .3em;
-//   left: .2em;
-//   border-right: 3px solid transparent;
-//   border-bottom: 3px solid transparent;
-//   transform: rotate(45deg);
-//   transform-origin: 0% 100%;
-//   animation: checkbox-check 125ms 250ms cubic-bezier(.4,.0,.23,1) forwards;
-// }
-
-// @keyframes shrink-bounce{
-//   0%{
-//     transform: scale(1);
-//   }
-//   33%{    
-//     transform: scale(.85);
-//   }
-//   100%{
-//     transform: scale(1);    
-//   }
-// }
-// @keyframes checkbox-check{
-//   0%{
-//     width: 0;
-//     height: 0;
-//     border-color: #FFC700;
-//     transform: translate3d(0,0,0) rotate(45deg);
-//   }
-//   33%{
-//     width: .3em;
-//     height: 0;
-//     transform: translate3d(0,0,0) rotate(45deg);
-//   }
-//   100%{    
-//     width: .3em;
-//     height: .7em;    
-//     border-color: #FFC700;
-//     transform: translate3d(0,-.5em,0) rotate(45deg);
-//   }
-// }
 
 .order_summing {
     display: flex;
@@ -466,7 +309,7 @@ label {
     font-weight: 500;
     font-size: 24px;
     line-height: 40px;
-    color: rgb(18, 37, 146);
+    color: rgb(63, 103, 204);
 }
 
 .order_button {
@@ -489,6 +332,6 @@ label {
 
 .order_button:hover {
     color: #fff;
-    border-color: rgb(18, 37, 146);
-    background-color: rgb(18, 37, 146); 
+    border-color: rgb(63, 103, 204);
+    background-color: rgb(63, 103, 204); 
 }
