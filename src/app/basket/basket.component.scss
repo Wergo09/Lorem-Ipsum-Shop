@@ -159,21 +159,6 @@ label {
     color: #FFFFFF;
 }
 
-.first_skew {
-    width: 63.5px;
-    height: 30px;
-}
-
-.second_skew {
-    width: 108px;
-    height: 30px;
-}
-
-.third_skew {
-    width: 94px;
-    height: 30px;
-}
-
 .product_options_price {
     font-family: 'Montserrat';
     font-style: normal;
@@ -190,7 +175,6 @@ label {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    // width: 85%;
 }
 
 .order_title {
@@ -334,4 +318,67 @@ label {
     color: #fff;
     border-color: rgb(63, 103, 204);
     background-color: rgb(63, 103, 204); 
+}
+
+@media screen and (max-width:960px) {
+    .basket {
+        padding-top: 150px;
+    }
+    .basket_block {
+        display: flex;
+        flex-direction: column;
+    }
+    .order {
+        padding-top: 5%;
+    }
+    .position_cancel {
+        bottom: -60px;
+        left: 340px;
+    }
+    .basket_left_block {
+        width: 100%;
+        gap: 80px;
+    }
+    .basket_position:last-child {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .basket_main {
+        width: 100%;
+    }
+    .basket_fields {
+        margin: 0 auto;
+        width: 95%;
+        font-size: 7px;
+        justify-content: space-between;
+    }
+    .basket_left_block {
+        gap: 80px;
+    }
+    .basket_position {
+        width: 100%;
+        justify-content: left;
+        gap: 20px;
+    }
+    .basket_position:last-child {
+        margin-bottom: 50px;
+    }
+    .product_options_name {
+        font-size: 15px;
+        line-height: normal;
+    }
+    .product_options_price {
+        padding-right: 5px;
+        font-size: 18px;
+    }
+    .position_cancel {
+        bottom: -60px;
+        left: 180px;
+    }
+    .goods_img {
+        width: 100px;
+        height: 120px;
+    }
 }

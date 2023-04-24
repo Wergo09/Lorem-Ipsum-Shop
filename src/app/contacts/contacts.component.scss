@@ -226,3 +226,54 @@
     color: #fff;
     border: 2px solid rgb(63, 103, 204);
 }
+
+@media screen and (max-width:570px) {
+    .sign_logo {
+        background-size: cover;
+        padding-top: 200px;
+    }
+    .sign_logo h1 {
+        font-size: 40px;
+        height: auto;
+        width: auto;
+        text-align: center;
+        padding-bottom: 150px;
+    }
+    .sign_text {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #333;
+        width: auto;
+        margin-bottom: 25px;
+    }
+    .contacts_field {
+        flex-direction: column;
+        width: auto;
+    }
+    .contacts__input {
+        display: flex;
+        justify-content: center;
+    }
+    .contacts__input input {
+        width: 350px;
+    }
+    .submit_button {
+        width: 350px;
+    }
+    .social_network_home {
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    .social_network_home a {
+        margin-right: 0;
+    }
+    .contacts_field_right_part {
+        width: 90%;
+        margin: 0 auto;
+    }
+}    

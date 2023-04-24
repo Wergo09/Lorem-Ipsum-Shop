@@ -273,3 +273,35 @@
         visibility: visible;
     }
 }
+
+@media screen and (max-width:960px) {
+    .profile_main {
+        display: flex;
+        flex-direction: column;
+    }
+    .profile_history {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .history_item {
+        justify-content: left;
+        width: 100%;
+        padding: 10px;
+    }
+    .profile_item {
+        justify-content: left;
+        width: 100%;
+        padding: 10px;
+    }
+    .history_items {
+        width: 100%;
+    }
+    .item_name {
+        font-size: 20px;
+    }
+    .profile_items {
+        width: 100%;
+    }
+}

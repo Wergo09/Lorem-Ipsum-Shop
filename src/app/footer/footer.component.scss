@@ -161,3 +161,33 @@ form input:nth-child(2):hover {
         align-items: center;
     }
 }
+
+@media screen and (max-width:570px) {
+    .block_footer {
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+        align-items: center;
+    }
+    .block_footer div {
+        margin-bottom: 5px;
+        align-items: center;
+    }
+    .block_social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 100%;
+    }
+    .social_network {
+        justify-content: center;
+    }
+    .block_info {
+        display: flex;
+        flex-direction: column;
+        align-self: normal;
+        padding-top: 50px;
+    }
+    .block_email {
+        flex-direction: column;
+    }
+}

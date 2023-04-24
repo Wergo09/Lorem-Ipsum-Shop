@@ -357,3 +357,56 @@ input[type="text"]::-webkit-input-placeholder {
         text-align: center;
     }
 }
+
+@media screen and (max-width:570px) {
+    .sign_logo {
+        background-size: cover;
+        padding-top: 200px;
+    }
+    .sign_logo h1 {
+        font-size: 40px;
+        height: auto;
+        width: auto;
+        text-align: center;
+        padding-bottom: 150px;
+    }
+    .sign_text {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #333;
+        width: auto;
+        margin-bottom: 25px;
+    }
+    .header_line {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .header_line ul{
+        gap: 25px;
+        flex-wrap: wrap;
+        flex: 33%;
+    }
+    .header_line li:nth-child(6) {
+        margin-left: 20px;
+        margin-right: 15px;
+    }
+    .catalog_menu_text {
+        width: 100%;
+        text-align: center;
+    }
+    .catalog_sorted {
+        justify-content: center;
+    }
+    .products_menu {
+        width: 95%;
+        flex-direction: column;
+    }
+    .products_goods_example {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
