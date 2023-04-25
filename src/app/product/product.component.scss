@@ -24,7 +24,7 @@
     text-align: center;
     color: #A4A4A4;
     margin: 0 auto;
-    padding-top: 3%;
+    padding-top: 15%;
     padding-bottom: 5%;
 }
 
@@ -419,16 +419,16 @@ label {
     padding: .6em .8em .5em 1.4em; 
 }
 
-@media screen and (max-width:570px) {
+@media screen and (max-width:960px) {
     .product_container {
-        margin-top: 150px;
+        margin-top: 50px;
     }
     .product_position {
         margin: 0 auto;
     }
     .product_img {
         align-self: center;
-        width: 365px;
+        width: 97%;
         height: 100%;
     }
     .product_options_name {
@@ -442,7 +442,8 @@ label {
         margin: 0 auto;
     }
     .product_options_list {
-        padding: 25px;
+        padding-top: 25px;
+        padding-bottom: 25px;
         flex-wrap: wrap;
         gap: 25px;
     }
@@ -453,4 +454,10 @@ label {
         height: 20px;
         width: 50px;
     }    
+}
+
+@media screen and (max-width:570px) {
+    .product_container {
+        margin-top: 150px;
+    }
 }
