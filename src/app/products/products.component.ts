@@ -13,9 +13,7 @@ export class ProductsComponent implements OnInit {
   public categories: any[] = []; 
   private categorySubscribe: any;
   private productsSubscribe: any;
-  // private productSubscribe: any;
   public products: any[] = [];
-  // public product: any[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -30,7 +28,6 @@ export class ProductsComponent implements OnInit {
   ngOnDestroy() {
     this.categorySubscribe.unsubscribe();
     this.productsSubscribe.unsubscribe();
-    // this.productSubscribe.unsubscribe();
   }
 
   getRouteParams() {
@@ -54,22 +51,6 @@ export class ProductsComponent implements OnInit {
       this.findCategory(products);
     })
   }
-
-  // getProduct() {
-  //   this.productsSubscribe = this.databaseService.getProducts().subscribe((product: any) => {
-  //     this.category?.id ? this.findProduct(product) : this.product = product;
-  //     this.findProduct(product);
-  //   })
-  // }
-
-  // findProduct(product: any[]) {
-  //   this.product = product.reduce((acc, item) => {
-  //     if (this.product === this.products) {
-  //       acc.push(item);
-  //     }
-  //     return acc;
-  //   }, [])
-  // }
 
   findCategory(products: any[]) {
     this.products = products.reduce((acc, item) => {

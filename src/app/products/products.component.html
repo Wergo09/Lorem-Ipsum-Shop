@@ -36,7 +36,11 @@
                 <div class="products_img">
                     <span class="filter"></span>
                     <a href="#"><img class="t_shirt t_shirt_position" src={{product.image}}></a>
-                    <span class="get_more_sign" routerLink='/product'>Подробнее про продукт</span>
+                    <span
+                    class="get_more_sign"
+                    [routerLink]='["/product"]'
+                    [queryParams]="{ product: product.id }"
+                    >Подробнее про продукт</span>
                 </div>
                 <p class="products_goods_upper_text">{{product.name}}</p>
                 <p class="products_goods_lower_text">{{product.price}} руб.</p>
