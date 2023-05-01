@@ -98,6 +98,7 @@
     border: 1px solid #333;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 700px;
+    margin: 0 auto;
     transition: .6s;
 }
 
@@ -105,6 +106,7 @@
 .product_options_up {
     display: flex;
     flex-direction: column;
+    margin-right: 50px;
     gap: 5px;
 }
 
@@ -115,7 +117,8 @@
     font-size: 20px;
     line-height: 39px;
     color: #333;
-    white-space: nowrap;
+    text-align: center;
+    width: 220px;
 }
 
 .product_options_type {
@@ -131,6 +134,7 @@
 
 .product_options_list {
     display: flex;
+    margin-right: 100px;
     gap: 5%;
 }
 
@@ -167,7 +171,7 @@ label {
     line-height: 39px;
     text-align: center;
     color: rgb(63, 103, 204);
-    padding-right: 5%;
+    padding-right: 8%;
     white-space: nowrap;
 }
 
@@ -339,8 +343,17 @@ label {
         width: 100%;
         gap: 80px;
     }
+    .basket_position {
+        width: 100%;
+    }
     .basket_position:last-child {
         margin-bottom: 50px;
+    }
+    .product_options_up {
+        margin-right: 30px;
+    }
+    .product_options_list {
+        margin-right: 80px;
     }
 }
 
@@ -358,9 +371,16 @@ label {
         gap: 80px;
     }
     .basket_position {
-        width: 100%;
-        justify-content: left;
+        width: 98%;
+        margin: 0 auto;
         gap: 20px;
+    }
+    .product_options_up {
+        margin-right: 0;
+        align-content: flex-start;
+    }
+    .product_options_list {
+        margin-right: 0;
     }
     .basket_position:last-child {
         margin-bottom: 50px;
@@ -368,9 +388,10 @@ label {
     .product_options_name {
         font-size: 15px;
         line-height: normal;
+        width: auto;
     }
     .product_options_price {
-        padding-right: 5px;
+        float: right;
         font-size: 18px;
     }
     .position_cancel {

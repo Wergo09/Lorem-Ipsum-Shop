@@ -155,6 +155,10 @@
     margin-bottom: 5%;
 }
 
+.about_me_main_row4 p {
+    width: 860px;
+}
+
 .about_me_main_row4:hover {
     opacity: 1;
 }
@@ -181,6 +185,9 @@
     .photo_row3 {
         width: 350px;
         height: 300px;
+    }
+    .about_me_main_row4 p {
+        width: auto;
     }
 }
 

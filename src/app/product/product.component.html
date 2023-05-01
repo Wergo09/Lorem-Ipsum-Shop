@@ -1,36 +1,37 @@
 <div class="product">
     <div class="product_container">
-        <p class="product_position"><span routerLink='/products' class="category_products">каталог</span> / <span class="category_products_type_of_product">худи</span> / <span class="category_product_name">желтое худи</span></p>
+        <p class="product_position"><span routerLink='/products' class="category_products">Каталог</span> / <span class="category_product_name">{{product?.name}}</span></p>
         <div class="product_main">
             <div class="product_main_upper">
-                <img class="product_img" src="assets/img/9-800x800 1.png">
+                <img class="product_img" src="{{product?.image}}">
                 <div class="product_options">
                     <div class="product_options_up">
-                        <p class="product_options_name">Желтое худи</p>
-                        <p class="product_options_type">худи</p>
+                        <p class="product_options_name">{{product?.name}}</p>
                     </div>
-                    <p class="product_options_price">1199.00 грн</p>
+                    <p class="product_options_price">{{product?.price}} руб.</p>
                     <div class="product_main_lower">
-                        <p class="product_main_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor aenean enim, bibendum sed massa tellus in. In ultrices et egestas faucibus vestibulum in. Eget nunc leo, in pellentesque. Sed habitant a lectus velit neque. Sed in accumsan in dictum ac.</p>
+                        <p class="product_main_description">{{product?.description}}</p>
                     </div>
                     <div class="product_options_list">
                         <div class="product_options_list_option option_first">
                             <label for="atributes_size">Размер: </label>
                             <select class="select-css">
-                                <option value="">Пункт 1</option>
-                              </select>
+                                <option value="{{size}}" *ngFor="let size of product?.size">{{size}}</option>
+                            </select>
                         </div>
                         <div class="product_options_list_option option_second">
                             <label for="atributes_color">Цвет: </label>
                             <select class="select-css">
-                                <option value="">Пункт 1</option>
+                                <option value="{{color}}" *ngFor="let color of product?.color">{{color}}</option>
                               </select>
                         </div> 
                         <div class="product_options_list_option option_third">
                             <label for="atributes_amount">Количество: </label>
                             <select class="select-css">
-                                <option value="">Пункт 1</option>
-                              </select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
                         </div>
                     </div>
                     <div class="product_options_buttons">

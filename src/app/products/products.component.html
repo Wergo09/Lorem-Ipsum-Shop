@@ -35,11 +35,11 @@
             <div class="products_goods_example" *ngFor='let product of products'>
                 <div class="products_img">
                     <span class="filter"></span>
-                    <a href="#"><img class="t_shirt t_shirt_position" src={{product.image}}></a>
+                    <img class="t_shirt t_shirt_position" src={{product.image}}>
                     <span
                     class="get_more_sign"
                     [routerLink]='["/product"]'
-                    [queryParams]="{ product: product.id }"
+                    [queryParams]="{ id: product.id }"
                     >Подробнее про продукт</span>
                 </div>
                 <p class="products_goods_upper_text">{{product.name}}</p>

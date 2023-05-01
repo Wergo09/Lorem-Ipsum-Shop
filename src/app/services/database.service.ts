@@ -14,10 +14,14 @@ export class DatabaseService {
   }
 
   getCategory(id: string): Observable<any> {
-    return this.db.collection('categories').doc(id).valueChanges({idField: 'id'})
+    return this.db.collection('categories').doc(id).valueChanges({idField: 'id'});
   }
 
   getProducts(): Observable<any[]> {
     return this.db.collection('products').valueChanges({idField: 'id'});
+  }
+
+  getProduct(id: string): Observable<any> {
+    return this.db.collection('products').doc(id).valueChanges({idField: 'id'});
   }
 }

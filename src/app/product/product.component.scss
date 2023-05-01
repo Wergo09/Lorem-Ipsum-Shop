@@ -44,7 +44,6 @@
 }
 
 .product_main:hover {
-    // background-color: rgb(40, 62, 186);
     background-color: rgb(63, 103, 204);
     border: 2px solid rgb(63, 103, 204);
     outline: 3px solid rgb(63, 103, 204);
@@ -60,6 +59,8 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    width: 100%;
+    height: 100%;
     padding: 2%;
     gap: 2%;
 }
@@ -189,6 +190,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+    margin: 0 auto;
 }
 
 .product_options_up {
@@ -203,7 +205,7 @@
     font-weight: 700;
     font-size: 64px;
     line-height: 58px;
-    text-align: center;
+    text-align: left;
     color: #333;
 }
 
@@ -220,11 +222,15 @@
 .product_options_list {
     display: flex;
     gap: 5%;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .product_options_list_option {
     display: flex;
     gap: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .product_options_price {
@@ -264,21 +270,6 @@ label {
     text-align: center;
     white-space: nowrap;
     color: #333;
-}
-
-.first_skew {
-    width: 63.5px;
-    height: 30px;
-}
-
-.second_skew {
-    width: 108px;
-    height: 30px;
-}
-
-.third_skew {
-    width: 94px;
-    height: 30px;
 }
 
 .product_options_buttons {
@@ -346,7 +337,7 @@ label {
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin: 0 auto;
+    width: 95%;
 }
 
 .product_main_description_title {
@@ -362,9 +353,10 @@ label {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 29px;
     color: #333;
+    width: 100%;
 }
 
 
@@ -436,6 +428,7 @@ label {
     }
     .product_main_upper {
         flex-direction: column;
+        gap: 0;
     }
     .product_options {
         width: 95%;
@@ -459,5 +452,8 @@ label {
 @media screen and (max-width:570px) {
     .product_container {
         margin-top: 150px;
+    }
+    .product_img {
+        align-self: center;
     }
 }
