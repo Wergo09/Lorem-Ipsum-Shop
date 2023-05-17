@@ -81,18 +81,80 @@
             <div class="contacts_field_left_part">
             <div class="contacts_field_inputs">
                 <div class="contacts__input">
-                    <input type="text" placeholder="Ваше имя">
+                    <input
+                    class="form-control"
+                    name="name"
+                    [(ngModel)]="contactForm.name"
+                    #name="ngModel"
+                    required
+                    type="text"
+                    placeholder="Ваше имя">
+                    <div
+                    [hidden]="name.valid || name.untouched"
+                    class="alert"
+                    *ngIf="!visibility"
+                    >
+                      *Не указано имя
+                    </div>
                 </div>
                 <div class="contacts__input">
-                    <input type="mail" placeholder="Email">
+                    <input
+                    type="email"
+                    class="form-control"
+                    name="Email"
+                    placeholder="Email"
+                    [(ngModel)]="contactForm.email"
+                    #email="ngModel"
+                    required
+                    pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
+                    <div
+                    [hidden]="email.valid || email.untouched"
+                    class="alert"
+                    *ngIf="!visibility"
+                    >
+                      *Некорректный email
+                    </div>
                 </div>
                 <div class="contacts__input">
-                    <input type="phone" placeholder="Телефон">
+                    <input 
+                    type="phone"
+                    placeholder="Телефон"
+                    class="form-control"
+                    name="phone"
+                    [(ngModel)]="contactForm.phone"
+                    #phone="ngModel"
+                    required
+                    pattern="[0-9]{12}">
+                    <div
+                    [hidden]="phone.valid || phone.untouched"
+                    class="alert"
+                    *ngIf="!visibility"
+                    >  
+                      *Введите номер в 12-значном формате
+                    </div>
                 </div>
                 <div class="contacts__input">
-                    <input type="text" placeholder="Ваше сообщение">
+                    <input 
+                    type="text"
+                    placeholder="Ваше сообщение"
+                    class="form-control"
+                    name="message"
+                    placeholder="Сообщение"
+                    max="200"
+                    [(ngModel)]="contactForm.message"
+                    #message="ngModel">
                 </div>
-                <input type="submit" class="sign_catalog submit_button" value="Связаться с нами">
+                <div class="alert alert-success" role="alert" *ngIf="visibility">
+                    <p
+                      [ngClass]="{
+                        'status-success': messageStatus === true,
+                        'status-error': messageStatus === false
+                      }"
+                    >
+                      {{ messageSubmit }}
+                    </p>
+                </div>
+                <input type="submit" class="sign_catalog submit_button" value="Связаться с нами" (click)="onSubmit()">
                 <div class="social_network_home">
                 <a href="https://www.instagram.com/artukhovskiy/">
                     <img src="assets/img/instagram_new.png" alt="social">

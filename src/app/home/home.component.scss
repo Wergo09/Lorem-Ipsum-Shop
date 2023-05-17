@@ -520,6 +520,14 @@ img {
   width: 100%;
 }
 
+.alert {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 16px;
+    padding: 1%;
+    transition: .6s;
+}
+
 @media screen and (max-width:960px) {
   .home {
     margin-top: 130px;
@@ -562,11 +570,16 @@ img {
     }
     .contacts_field {
         flex-direction: column;
-        width: auto;
+        width: 90%;
+    }
+    .contacts_field_inputs {
+        margin: 0 auto;
     }
     .contacts__input {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        margin: 0 auto;
     }
     .contacts__input input {
         width: 350px;

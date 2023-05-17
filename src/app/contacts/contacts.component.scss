@@ -228,6 +228,14 @@
     border: 2px solid rgb(63, 103, 204);
 }
 
+.alert {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 16px;
+    padding: 1%;
+    transition: .6s;
+}
+
 @media screen and (max-width:570px) {
     .sign_logo {
         background-size: cover;
@@ -253,11 +261,14 @@
     }
     .contacts_field {
         flex-direction: column;
+        margin: 0 auto;
         width: auto;
     }
     .contacts__input {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        margin: 0 auto;
     }
     .contacts__input input {
         width: 350px;

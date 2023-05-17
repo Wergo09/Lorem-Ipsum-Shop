@@ -51,7 +51,7 @@
   }
 
   .enter_button {
-    color: rgb(255, 255, 255);
+    color: #333;
     border: 2px solid rgb(255, 255, 255);
   }
 
@@ -59,6 +59,10 @@
     border: 2px solid rgb(63, 103, 204);
     background-color: rgb(255, 255, 255);
     color: rgb(63, 103, 204);
+  }
+
+  .alert {
+    color: rgb(255, 255, 255); 
   }
 }
 
@@ -93,6 +97,7 @@ input {
     height: 40px;
     border: 1px solid #333;
     border-radius: 15px;
+    padding-left: 5%;
 }
 
 input::placeholder {
@@ -102,7 +107,6 @@ input::placeholder {
     font-size: 12px;
     line-height: 15px;
     color: #333;
-    padding-left: 5%;
 }
 
 .enter_checkbox {
@@ -241,14 +245,17 @@ input[type='checkbox']:checked + label > span:before{
     font-size: 16px;
     line-height: 19px;
     color: #333;
+    background-color: #fff;
     width: 199px;
     height: 50px;
     border: 2px solid #333;
+    border-radius: 0px;
     text-decoration: none;
     transition: .5s;
     text-align: center;
     padding: 3%;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .enter_button:hover {
@@ -257,7 +264,7 @@ input[type='checkbox']:checked + label > span:before{
 }
 
 .forget_button {
-    font-family: 'Montserrat Alternates';
+    font-family: 'Montserrat';
     font-style: normal;
     position: relative;
     font-weight: 600;
@@ -269,6 +276,14 @@ input[type='checkbox']:checked + label > span:before{
     cursor: pointer;
     line-height: 1;
     transition: .5s;
+}
+
+.alert {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 16px;
+    padding: 1%;
+    transition: .6s;
 }
 
 @media screen and (max-width:960px) {

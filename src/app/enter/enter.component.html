@@ -1,10 +1,58 @@
 <div class="enter">
-    <div class="enter_field_skew">
+    <form class="enter_field_skew">
         <div class="enter_field">
             <p class="enter_sign_upper">Вход</p>
             <a href="#" class="forget_button">У меня ещё нет аккаунта</a>
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
+            <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="Email"
+                  placeholder="Email"
+                  [(ngModel)]="contactForm.email"
+                  #email="ngModel"
+                  required
+                  pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+                />
+                <div
+                  [hidden]="email.valid || email.untouched"
+                  class="alert"
+                  *ngIf="!visibility"
+                >
+                  *Некорректный email
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="password"
+                  name="Password"
+                  placeholder="Password"
+                  [(ngModel)]="contactForm.password"
+                  #password="ngModel"
+                  required
+                  pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,15}$"
+                />
+                <div
+                  [hidden]="password.valid || password.untouched"
+                  class="alert"
+                  *ngIf="!visibility"
+                >
+                  *Некорректный пароль
+                </div>
+              </div>
+              <div class="alert alert-success" role="alert" *ngIf="visibility">
+                <p
+                  [ngClass]="{
+                    'status-success': dataStatus === true,
+                    'status-error': dataStatus === false
+                  }"
+                >
+                  {{ dataSubmit }}
+                </p>
+              </div>
+            <!-- <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password"> -->
             <div class="enter_checkbox">
                 <input id='one' type='checkbox' />
                 <label for='one'>
@@ -12,8 +60,8 @@
                     Запомнить меня
                 </label>
             </div>
-            <a href="#" class="enter_button">Вход</a>
+            <input type="submit" class="enter_button" value="Вход" (click)="onSubmit()"/>
             <a href="#" class="forget_button padding_bottom">Забыл пароль</a>
         </div>
-    </div>
+    </form>
 </div>
