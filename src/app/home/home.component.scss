@@ -112,15 +112,15 @@ img {
 .slide_1 {
     z-index: 2;
     opacity: 1;
-  background:url('/assets/img/model5.jpg');
+  background:url('./src/assets/img/model5.jpg');
   background-size:cover;
   }
 .slide_2 {
-  background:url('/assets/img/model2.jpg');
+  background:url('./src/assets/img/model2.jpg');
    background-size:cover;
 }
 .slide_3 {
-  background:url('/assets/img/model6.jpg');
+  background:url('./src/assets/img/model6.jpg');
    background-size:cover;
 }
 
@@ -344,7 +344,7 @@ img {
 }
 
 .registration {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.384), rgba(255, 255, 255, 0.384)), url(/assets/img/back_for_enter.webp);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.384), rgba(255, 255, 255, 0.384)), url(./src/assets/img/back_for_enter.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
